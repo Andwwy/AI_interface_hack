@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:figma-make-production.figma.com)",
+      "WebFetch(domain:play-box-06112545.figma.site)",
+      "Bash(curl:*)",
+      "Bash(python3:*)"
+    ]
+  }
+}

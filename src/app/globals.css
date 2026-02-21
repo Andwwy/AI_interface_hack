@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: #000;
+    color: #fff;
+  }
+}
+
+.gpu-layer {
+  will-change: transform;
+}
+
+@keyframes rotate-wash {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotate-wash-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+}
+
+@keyframes drift-0 {
+  0%   { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33%  { transform: translate(5vw, 4vh) scale(1.04) rotate(4deg); }
+  66%  { transform: translate(-3vw, 7vh) scale(0.97) rotate(-3deg); }
+  100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+}
+
+@keyframes drift-1 {
+  0%   { transform: translate(0, 0) scale(1.02) rotate(0deg); }
+  50%  { transform: translate(-6vw, 5vh) scale(0.96) rotate(-5deg); }
+  100% { transform: translate(0, 0) scale(1.02) rotate(0deg); }
+}
+
+@keyframes drift-2 {
+  0%   { transform: translate(0, 0) scale(1) rotate(0deg); }
+  40%  { transform: translate(4vw, -6vh) scale(1.05) rotate(3deg); }
+  80%  { transform: translate(-5vw, 3vh) scale(0.95) rotate(-4deg); }
+  100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
