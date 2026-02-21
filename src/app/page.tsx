@@ -56,6 +56,17 @@ export default function GalleryPage() {
   const [albums, setAlbums] = useState<Album[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [showSplash, setShowSplash] = useState(true);
+  const [splashFading, setSplashFading] = useState(false);
+
+  useEffect(() => {
+    const fadeTimer = setTimeout(() => setSplashFading(true), 2400);
+    const hideTimer = setTimeout(() => setShowSplash(false), 3200);
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(hideTimer);
+    };
+  }, []);
 
   const {
     selectedIndex,
@@ -319,6 +330,23 @@ export default function GalleryPage() {
 
       {/* Gesture Controller (headless — swipe to browse) */}
       <GestureController />
+
+      {/* Splash screen */}
+      {showSplash && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[#e8e8e8]"
+          style={{
+            transition: "opacity 0.8s ease-out",
+            opacity: splashFading ? 0 : 1,
+          }}
+        >
+          <img
+            src="/splash.png"
+            alt="Use index finger hand gesture for browsing"
+            className="max-w-[80%] max-h-[80%] object-contain"
+          />
+        </div>
+      )}
     </div>
   );
 }
