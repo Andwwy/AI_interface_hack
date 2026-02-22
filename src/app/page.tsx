@@ -21,7 +21,6 @@ const PLACEHOLDER_COVER =
 
 const DEFAULT_ALBUMS: Album[] = [
   { id: "default-1", title: "WASTELAND", artist: "Brent Faiyaz", year: "2022", genre: "R&B/Soul", coverUrl: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/30/1b/30/301b30ef-9bb5-8fbd-6bdc-30552aefd0c6/8DrDvnuaSqqztj1vOGwY_Wasteland-Final6.jpg/600x600bb.jpg" },
-  { id: "default-2", title: "Never Enough", artist: "Daniel Caesar", year: "2023", genre: "R&B/Soul", coverUrl: "" },
   { id: "default-3", title: "Son Of Spergy", artist: "Daniel Caesar", year: "2025", genre: "R&B/Soul", coverUrl: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/83/ca/bb/83cabb97-8289-4a91-4d3b-4760b64d2971/25UMGIM90844.rgb.jpg/600x600bb.jpg" },
   { id: "default-4", title: "Take Care (Deluxe Version)", artist: "Drake", year: "2011", genre: "Hip-Hop/Rap", coverUrl: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d2/53/62/d2536245-b94c-b3fd-7168-9512f655f6d4/00602527899091.rgb.jpg/600x600bb.jpg" },
   { id: "default-5", title: "ten", artist: "Fred again.. & Jozzy", year: "2023", genre: "Electronic", coverUrl: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e7/09/da/e709da20-1748-1845-b304-422667d242e4/5054197812194.jpg/600x600bb.jpg" },
