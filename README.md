@@ -2,4 +2,6 @@ A browsable vinyl record gallery with hand gesture navigation. Swipe through you
 
 Experience at: https://vinylgesture.vercel.app/
 
-<img src="Use Guide.png" style="display: block; margin: 0 auto;">
+<p align="center">
+  <img src="Use Guide.png" alt="Hand gesture browsing" width="600">
+</p>
